@@ -40,6 +40,9 @@ void saveData()
              << p.isSolved << "\n"
              << p.notes << "\n";
     }
+time_t now = time(0);
+file << "Last Updated: " << ctime(&now) << "\n";
+
     file.close();
 }
 
